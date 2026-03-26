@@ -1,0 +1,71 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // ===============================================================
+    // Assumed Data Model
+    // ===============================================================
+    // Collection: reviews
+    // Fields:
+    //   - authorName: string (required)
+    //   - authorEmail: string (optional)
+    //   - rating: number (required, 1-5)
+    //   - comment: string (required, < 1000 chars)
+    //   - createdAt: timestamp (required)
+    //   - approved: boolean (optional, default false)
+    // ===============================================================
+
+    // Helper Functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isAuthenticated() &&
+        (get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin' ||
+          ((request.auth.token.email == "fefe.clean.co@gmail.com" || request.auth.token.email == "vardhantanishk@gmail.com") && request.auth.token.email_verified == true));
+    }
+
+    function isValidReview(data) {
+      return data.keys().hasAll(['authorName', 'rating', 'comment', 'createdAt']) &&
+             data.authorName is string && data.authorName.size() > 0 && data.authorName.size() < 100 &&
+             data.rating is number && data.rating >= 1 && data.rating <= 5 &&
+             data.comment is string && data.comment.size() > 0 && data.comment.size() < 1000 &&
+             data.createdAt is timestamp;
+    }
+
+    match /reviews/{reviewId} {
+      // Anyone can read reviews
+      allow read: if true;
+      
+      // Anyone can create a review, and it is automatically approved
+      allow create: if isValidReview(request.resource.data);
+      
+      // Only admins can update (approve) or delete reviews
+      allow update, delete: if isAdmin();
+    }
+
+    function isValidContactRequest(data) {
+      return data.keys().hasAll(['name', 'email', 'serviceType', 'createdAt']) &&
+             data.name is string && data.name.size() > 0 && data.name.size() < 100 &&
+             data.email is string && data.email.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$") &&
+             data.serviceType is string &&
+             data.createdAt is timestamp;
+    }
+
+    match /contact_requests/{requestId} {
+      // Only admins can read contact requests
+      allow read: if isAdmin();
+      
+      // Anyone can create a contact request
+      allow create: if isValidContactRequest(request.resource.data);
+      
+      // Only admins can update or delete
+      allow update, delete: if isAdmin();
+    }
+
+    match /users/{userId} {
+      allow read: if isAuthenticated() && (request.auth.uid == userId || isAdmin());
+      allow write: if isAdmin();
+    }
+  }
+}

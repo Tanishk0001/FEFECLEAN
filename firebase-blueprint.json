@@ -1,0 +1,44 @@
+{
+  "entities": {
+    "Review": {
+      "title": "Review",
+      "description": "A customer review of the cleaning service.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "The unique ID of the review." },
+        "authorName": { "type": "string", "description": "The name of the person who wrote the review." },
+        "authorEmail": { "type": "string", "description": "The email of the person who wrote the review." },
+        "rating": { "type": "number", "description": "The rating given (1-5)." },
+        "comment": { "type": "string", "description": "The review text." },
+        "createdAt": { "type": "string", "format": "date-time", "description": "When the review was created." },
+        "approved": { "type": "boolean", "description": "Whether the review is approved for display." }
+      },
+      "required": ["authorName", "rating", "comment", "createdAt"]
+    },
+    "ContactRequest": {
+      "title": "ContactRequest",
+      "description": "A request for a cleaning quote.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "The unique ID of the request." },
+        "name": { "type": "string", "description": "The name of the requester." },
+        "email": { "type": "string", "description": "The email of the requester." },
+        "serviceType": { "type": "string", "description": "The type of service requested." },
+        "message": { "type": "string", "description": "The message from the requester." },
+        "createdAt": { "type": "string", "format": "date-time", "description": "When the request was created." },
+        "status": { "type": "string", "enum": ["pending", "contacted", "completed"], "description": "The status of the request." }
+      },
+      "required": ["name", "email", "serviceType", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/reviews": {
+      "schema": "Review",
+      "description": "Collection of customer reviews."
+    },
+    "/contact_requests": {
+      "schema": "ContactRequest",
+      "description": "Collection of contact and quote requests."
+    }
+  }
+}

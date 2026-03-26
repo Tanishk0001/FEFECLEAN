@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  
+  --color-brand-primary: #000000;
+  --color-brand-accent: #D4AF37;
+  --color-brand-dark: #111111;
+  --color-brand-gold-light: #F1E5AC;
+  --color-brand-muted: #888888;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-primary text-white font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-brand-accent;
+  }
+}
+
+.glass-card {
+  @apply bg-brand-dark/80 backdrop-blur-md border border-brand-accent/20 shadow-xl;
+}
+
+.section-padding {
+  @apply py-20 md:py-32 px-6 md:px-12 max-w-7xl mx-auto;
+}
+
+.btn-primary {
+  @apply bg-brand-accent text-black font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:bg-brand-gold-light hover:scale-105 active:scale-95 shadow-lg shadow-brand-accent/20;
+}
+
+.btn-secondary {
+  @apply border border-brand-accent text-brand-accent px-8 py-3 rounded-full transition-all duration-300 hover:bg-brand-accent hover:text-black hover:scale-105 active:scale-95;
+}
