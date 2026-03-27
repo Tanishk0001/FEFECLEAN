@@ -39,7 +39,7 @@ export default function Navbar() {
           >
             <a href="#home" className="flex items-center">
               <img 
-                src="src/assets/fefe-logo.png" 
+                src="https://lh3.googleusercontent.com/d/15uvjA96BoRg-rk-Cc004GGxU8S7fZnD-" 
                 alt="FEFE Clean Logo" 
                 className="h-10 md:h-12 w-auto object-contain"
               />

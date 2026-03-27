@@ -77,7 +77,7 @@ export default function WhyChooseUs() {
           >
             <div className="aspect-[4/5] rounded-[60px] overflow-hidden shadow-2xl">
               <img 
-                src="src/assets/c7.jpg" 
+                src="https://lh3.googleusercontent.com/d/104euv8P5v4aKCZO-SZy8VU_qbQTtIGKE" 
                 alt="Professional cleaner" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"

@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           <div className="space-y-6">
             <img 
-              src="src/assets/fefe-logo.png" 
+              src="https://lh3.googleusercontent.com/d/15uvjA96BoRg-rk-Cc004GGxU8S7fZnD-" 
               alt="FEFE Clean Logo" 
               className="h-12 w-auto object-contain"
             />

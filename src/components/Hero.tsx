@@ -6,6 +6,13 @@ import ContactModal from "./ContactModal";
 export default function Hero() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const clientImages = [
+    "https://lh3.googleusercontent.com/d/1gP9YAbnU0kDV8ZQf7FWPsQd21Rs1ajYZ",
+    "https://lh3.googleusercontent.com/d/185vEuUsebdvLdMaKBGCX8i3Y4YxBJwEX",
+    "https://lh3.googleusercontent.com/d/1QaPnpomNncJfdYFNNTm_bY0N8Bfye5j2",
+    "https://lh3.googleusercontent.com/d/121jZSr845W_PiF8WU4FU1ev2p7jllqxR"
+  ];
+
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-black">
       {/* Background Elements */}
@@ -54,10 +61,10 @@ export default function Hero() {
           
           <div className="mt-12 flex items-center gap-6">
             <div className="flex -space-x-3">
-              {[1, 2, 3, 4].map((i) => (
+              {clientImages.map((src, i) => (
                 <img
                   key={i}
-                  src={`src/assets/c${i}.jpg`}
+                  src={src}
                   alt="Client"
                   className="w-10 h-10 rounded-full border-2 border-brand-accent/20 object-cover"
                   referrerPolicy="no-referrer"
@@ -79,7 +86,7 @@ export default function Hero() {
         >
           <div className="relative z-10 rounded-[40px] overflow-hidden shadow-2xl aspect-[4/5] border border-brand-accent/20">
             <img 
-              src="src/assets/c5.jpg" 
+              src="https://lh3.googleusercontent.com/d/1WtfraG6EuWK7yxltHc3dnOCmTCnPexAy" 
               alt="Clean luxury interior" 
               className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700"
               referrerPolicy="no-referrer"

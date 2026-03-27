@@ -1,24 +1,16 @@
 import { motion } from "motion/react";
-import c1 from "../assets/c1.jpg";
-import c2 from "../assets/c2.jpg";
-import c3 from "../assets/c3.jpg";
-import c4 from "../assets/c4.jpg";
-import c5 from "../assets/c5.jpg";
-import c6 from "../assets/c6.jpg";
-import c7 from "../assets/c7.jpg";
-import c8 from "../assets/c8.jpg";
-import c9 from "../assets/c9.jpg";
 
 const galleryImages = [
-  { src: c1, alt: "Luxury Living Space", span: "md:col-span-2 md:row-span-2" },
-  { src: c2, alt: "Elegant Staircase", span: "md:col-span-1 md:row-span-1" },
-  { src: c3, alt: "Dining Detail", span: "md:col-span-1 md:row-span-1" },
-  { src: c4, alt: "Kitchen Perfection", span: "md:col-span-1 md:row-span-1" },
-  { src: c5, alt: "Minimalist Seating", span: "md:col-span-1 md:row-span-1" },
-  { src: c6, alt: "Arched Window View", span: "md:col-span-1 md:row-span-2" },
-  { src: c7, alt: "Modern Sink", span: "md:col-span-1 md:row-span-1" },
-  { src: c8, alt: "Vibrant Bathroom", span: "md:col-span-1 md:row-span-1" },
-  { src: c9, alt: "Artistic Interior", span: "md:col-span-2 md:row-span-1" },
+  { src: "https://lh3.googleusercontent.com/d/1gP9YAbnU0kDV8ZQf7FWPsQd21Rs1ajYZ", alt: "Luxury Living Space", span: "md:col-span-2 md:row-span-2" },
+  { src: "https://lh3.googleusercontent.com/d/185vEuUsebdvLdMaKBGCX8i3Y4YxBJwEX", alt: "Elegant Staircase", span: "md:col-span-1 md:row-span-1" },
+  { src: "https://lh3.googleusercontent.com/d/1QaPnpomNncJfdYFNNTm_bY0N8Bfye5j2", alt: "Dining Detail", span: "md:col-span-1 md:row-span-1" },
+  { src: "https://lh3.googleusercontent.com/d/121jZSr845W_PiF8WU4FU1ev2p7jllqxR", alt: "Kitchen Perfection", span: "md:col-span-1 md:row-span-1" },
+  { src: "https://lh3.googleusercontent.com/d/1WtfraG6EuWK7yxltHc3dnOCmTCnPexAy", alt: "Minimalist Seating", span: "md:col-span-1 md:row-span-1" },
+  { src: "https://lh3.googleusercontent.com/d/1tzdufVhvnu_m1i4zpUNuog7Y2w8LP42f", alt: "Arched Window View", span: "md:col-span-1 md:row-span-2" },
+  { src: "https://lh3.googleusercontent.com/d/104euv8P5v4aKCZO-SZy8VU_qbQTtIGKE", alt: "Modern Sink", span: "md:col-span-1 md:row-span-1" },
+  { src: "https://lh3.googleusercontent.com/d/1SnNM7U75h5MFssR18T6VT2mf0OYokGl4", alt: "Vibrant Bathroom", span: "md:col-span-1 md:row-span-1" },
+  { src: "https://lh3.googleusercontent.com/d/1yaQjudq59Fy6ftCCpN910vYx42VtfVYB", alt: "Artistic Interior", span: "md:col-span-2 md:row-span-1" },
+  { src: "https://lh3.googleusercontent.com/d/1NuU0IsyTyaX5VNbiafR9Hwqi0cyykIH0", alt: "Premium Finish", span: "md:col-span-1 md:row-span-1" },
 ];
 
 export default function Gallery() {
