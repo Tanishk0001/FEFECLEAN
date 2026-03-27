@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { useState, useEffect } from "react";
 import { Menu, X, Phone, Instagram } from "lucide-react";
 import ContactModal from "./ContactModal";
-import logoImage from "/public/assets/FEFE CLEAN LOGO.png";
+const logoImage = '/assets/FEFE CLEAN LOGO.png';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
