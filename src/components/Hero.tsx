@@ -57,7 +57,7 @@ export default function Hero() {
               {[1, 2, 3, 4].map((i) => (
                 <img
                   key={i}
-                  src={`/assets/Instagram highlights stories 17972495135852311 (${i}).jpg`}
+                  src={`public/assets/Instagram highlights stories 17972495135852311 (${i}).jpg`}
                   alt="Client"
                   className="w-10 h-10 rounded-full border-2 border-brand-accent/20 object-cover"
                   referrerPolicy="no-referrer"
