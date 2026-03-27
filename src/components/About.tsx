@@ -13,7 +13,7 @@ export default function About() {
           className="relative"
         >
           <img 
-            src="/assets/c6.jpg" 
+            src="src/assets/c6.jpg" 
             alt="FEFE Clean Team" 
             className="rounded-[40px] w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover shadow-2xl border border-brand-accent/20 grayscale-[20%] hover:grayscale-0 transition-all duration-700"
             referrerPolicy="no-referrer"

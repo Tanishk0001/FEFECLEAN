@@ -57,7 +57,7 @@ export default function Hero() {
               {[1, 2, 3, 4].map((i) => (
                 <img
                   key={i}
-                  src={`/assets/c${i}.jpg`}
+                  src={`src/assets/c${i}.jpg`}
                   alt="Client"
                   className="w-10 h-10 rounded-full border-2 border-brand-accent/20 object-cover"
                   referrerPolicy="no-referrer"
@@ -79,7 +79,7 @@ export default function Hero() {
         >
           <div className="relative z-10 rounded-[40px] overflow-hidden shadow-2xl aspect-[4/5] border border-brand-accent/20">
             <img 
-              src="/assets/c5.jpg" 
+              src="src/assets/c5.jpg" 
               alt="Clean luxury interior" 
               className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700"
               referrerPolicy="no-referrer"
