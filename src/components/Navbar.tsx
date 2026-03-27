@@ -2,7 +2,6 @@ import { motion } from "motion/react";
 import { useState, useEffect } from "react";
 import { Menu, X, Phone, Instagram } from "lucide-react";
 import ContactModal from "./ContactModal";
-const logoImage = '/assets/fefe-clean-logo.png';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,7 +39,7 @@ export default function Navbar() {
           >
             <a href="#home" className="flex items-center">
               <img 
-                src={logoImage}
+                src="/assets/fefe-logo.png" 
                 alt="FEFE Clean Logo" 
                 className="h-10 md:h-12 w-auto object-contain"
               />

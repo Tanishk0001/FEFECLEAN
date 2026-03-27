@@ -1,14 +1,15 @@
 import { motion } from "motion/react";
+
 const galleryImages = [
-  { src: '/assets/Instagram highlights stories 17972495135852311 (1).jpg', alt: "Luxury Living Space", span: "md:col-span-2 md:row-span-2" },
-  { src: '/assets/Instagram highlights stories 17972495135852311 (2).jpg', alt: "Elegant Staircase", span: "md:col-span-1 md:row-span-1" },
-  { src: '/assets/Instagram highlights stories 17972495135852311 (3).jpg', alt: "Dining Detail", span: "md:col-span-1 md:row-span-1" },
-  { src: '/assets/Instagram highlights stories 17972495135852311 (4).jpg', alt: "Kitchen Perfection", span: "md:col-span-1 md:row-span-1" },
-  { src: '/assets/Instagram highlights stories 17972495135852311 (5).jpg', alt: "Minimalist Seating", span: "md:col-span-1 md:row-span-1" },
-  { src: '/assets/Instagram highlights stories 17972495135852311 (6).jpg', alt: "Arched Window View", span: "md:col-span-1 md:row-span-2" },
-  { src: '/assets/Instagram highlights stories 17972495135852311 (7).jpg', alt: "Modern Sink", span: "md:col-span-1 md:row-span-1" },
-  { src: '/assets/Instagram highlights stories 17972495135852311 (8).jpg', alt: "Vibrant Bathroom", span: "md:col-span-1 md:row-span-1" },
-  { src: '/assets/Instagram highlights stories 18060561181979305 (1).jpg', alt: "Artistic Interior", span: "md:col-span-2 md:row-span-1" },
+  { src: "/assets/c1.jpg", alt: "Luxury Living Space", span: "md:col-span-2 md:row-span-2" },
+  { src: "/assets/c2.jpg", alt: "Elegant Staircase", span: "md:col-span-1 md:row-span-1" },
+  { src: "/assets/c3.jpg", alt: "Dining Detail", span: "md:col-span-1 md:row-span-1" },
+  { src: "/assets/c4.jpg", alt: "Kitchen Perfection", span: "md:col-span-1 md:row-span-1" },
+  { src: "/assets/c5.jpg", alt: "Minimalist Seating", span: "md:col-span-1 md:row-span-1" },
+  { src: "/assets/c6.jpg", alt: "Arched Window View", span: "md:col-span-1 md:row-span-2" },
+  { src: "/assets/c7.jpg", alt: "Modern Sink", span: "md:col-span-1 md:row-span-1" },
+  { src: "/assets/c8.jpg", alt: "Vibrant Bathroom", span: "md:col-span-1 md:row-span-1" },
+  { src: "/assets/c9.jpg", alt: "Artistic Interior", span: "md:col-span-2 md:row-span-1" },
 ];
 
 export default function Gallery() {
