@@ -7,28 +7,28 @@ const testimonials = [
     role: "Homeowner",
     content: "FEFE Clean transformed my home. Their attention to detail is unmatched, and the team is incredibly professional. I've never seen my kitchen sparkle like this!",
     rating: 5,
-    image: "/assest/Instagram highlights stories 17972495135852311 (1).jpg"
+    image: "/assets/Instagram highlights stories 17972495135852311 (1).jpg"
   },
   {
     name: "Michael Chen",
     role: "Office Manager",
     content: "We've used several cleaning services for our office, but FEFE Clean is by far the best. They are reliable, thorough, and use products that don't leave harsh smells.",
     rating: 5,
-    image: "/assest/Instagram highlights stories 17972495135852311 (2).jpg"
+    image: "/assets/Instagram highlights stories 17972495135852311 (2).jpg"
   },
   {
     name: "Emma Thompson",
     role: "Real Estate Agent",
     content: "As a realtor, I need my listings to look perfect. FEFE Clean is my go-to for move-out cleans. They help me get top dollar for every property.",
     rating: 5,
-    image: "/assest/Instagram highlights stories 17972495135852311 (3).jpg"
+    image: "/assets/Instagram highlights stories 17972495135852311 (3).jpg"
   },
   {
     name: "David Wilson",
     role: "Apartment Resident",
     content: "The best part of my week is coming home after FEFE Clean has been there. It's like walking into a luxury hotel every single time.",
     rating: 5,
-    image: "/assest/Instagram highlights stories 17972495135852311 (4).jpg"
+    image: "/assets/Instagram highlights stories 17972495135852311 (4).jpg"
   }
 ];
 
