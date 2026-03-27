@@ -1,15 +1,24 @@
 import { motion } from "motion/react";
+import c1 from "../assets/c1.jpg";
+import c2 from "../assets/c2.jpg";
+import c3 from "../assets/c3.jpg";
+import c4 from "../assets/c4.jpg";
+import c5 from "../assets/c5.jpg";
+import c6 from "../assets/c6.jpg";
+import c7 from "../assets/c7.jpg";
+import c8 from "../assets/c8.jpg";
+import c9 from "../assets/c9.jpg";
 
 const galleryImages = [
-  { src: "src/assets/c1.jpg", alt: "Luxury Living Space", span: "md:col-span-2 md:row-span-2" },
-  { src: "src/assets/c2.jpg", alt: "Elegant Staircase", span: "md:col-span-1 md:row-span-1" },
-  { src: "arc/assets/c3.jpg", alt: "Dining Detail", span: "md:col-span-1 md:row-span-1" },
-  { src: "src/assets/c4.jpg", alt: "Kitchen Perfection", span: "md:col-span-1 md:row-span-1" },
-  { src: "src/assets/c5.jpg", alt: "Minimalist Seating", span: "md:col-span-1 md:row-span-1" },
-  { src: "src/assets/c6.jpg", alt: "Arched Window View", span: "md:col-span-1 md:row-span-2" },
-  { src: "src/assets/c7.jpg", alt: "Modern Sink", span: "md:col-span-1 md:row-span-1" },
-  { src: "src/assets/c8.jpg", alt: "Vibrant Bathroom", span: "md:col-span-1 md:row-span-1" },
-  { src: "src/assets/c9.jpg", alt: "Artistic Interior", span: "md:col-span-2 md:row-span-1" },
+  { src: c1, alt: "Luxury Living Space", span: "md:col-span-2 md:row-span-2" },
+  { src: c2, alt: "Elegant Staircase", span: "md:col-span-1 md:row-span-1" },
+  { src: c3, alt: "Dining Detail", span: "md:col-span-1 md:row-span-1" },
+  { src: c4, alt: "Kitchen Perfection", span: "md:col-span-1 md:row-span-1" },
+  { src: c5, alt: "Minimalist Seating", span: "md:col-span-1 md:row-span-1" },
+  { src: c6, alt: "Arched Window View", span: "md:col-span-1 md:row-span-2" },
+  { src: c7, alt: "Modern Sink", span: "md:col-span-1 md:row-span-1" },
+  { src: c8, alt: "Vibrant Bathroom", span: "md:col-span-1 md:row-span-1" },
+  { src: c9, alt: "Artistic Interior", span: "md:col-span-2 md:row-span-1" },
 ];
 
 export default function Gallery() {
