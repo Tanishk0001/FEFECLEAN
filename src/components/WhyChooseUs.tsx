@@ -77,7 +77,7 @@ export default function WhyChooseUs() {
           >
             <div className="aspect-[4/5] rounded-[60px] overflow-hidden shadow-2xl">
               <img 
-                src="public/assets/Instagram highlights stories 17972495135852311 (3).jpg" 
+                src="/assets/Instagram highlights stories 17972495135852311 (3).jpg" 
                 alt="Professional cleaner" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
