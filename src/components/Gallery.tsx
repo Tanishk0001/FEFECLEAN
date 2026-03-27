@@ -15,27 +15,27 @@ const galleryImages = [
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="bg-white">
+    <section id="gallery" className="bg-brand-primary">
       <div className="section-padding">
-        <div className="text-center max-w-3xl mx-auto mb-20">
+        <div className="text-center max-w-3xl mx-auto mb-24">
           <motion.span 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            className="text-xs font-semibold tracking-widest uppercase text-brand-muted mb-4 block"
+            className="text-xs font-semibold tracking-[0.3em] uppercase text-brand-accent mb-6 block"
           >
             Visual Excellence
           </motion.span>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-bold mb-6"
+            className="text-5xl md:text-6xl font-serif mb-8 text-white tracking-tight"
           >
-            Our Work in <span className="italic font-light">Focus</span>
+            Our Work in <span className="italic font-light metallic-text">Focus</span>
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            className="text-lg text-brand-muted"
+            className="text-lg text-brand-muted font-light"
           >
             A glimpse into the spotless, premium environments we create for our clients.
           </motion.p>

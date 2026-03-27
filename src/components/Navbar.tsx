@@ -46,8 +46,7 @@ export default function Navbar() {
             </a>
           </motion.div>
 
-          {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-10">
+          <div className="hidden md:flex items-center gap-12">
             {navLinks.map((link, i) => (
               <motion.a
                 key={link.name}
@@ -55,27 +54,27 @@ export default function Navbar() {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
-                className="text-xs uppercase tracking-widest font-semibold text-white/70 hover:text-brand-accent transition-all duration-300"
+                className="text-[10px] uppercase tracking-[0.25em] font-bold text-white/60 hover:text-brand-accent transition-all duration-300"
               >
                 {link.name}
               </motion.a>
             ))}
-            <div className="h-6 w-[1px] bg-brand-accent/30 mx-2"></div>
+            <div className="h-4 w-[1px] bg-white/10 mx-2"></div>
             <motion.a
               href="https://instagram.com/fefeclean/"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="text-brand-accent hover:text-brand-gold-light transition-all duration-300 hover:scale-110"
+              className="text-white/60 hover:text-brand-accent transition-all duration-300 hover:scale-110"
             >
-              <Instagram size={20} />
+              <Instagram size={18} />
             </motion.a>
             <motion.button
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               onClick={() => setIsModalOpen(true)}
-              className="btn-primary text-xs py-2.5 px-8 tracking-widest uppercase font-bold"
+              className="btn-primary"
             >
               Book Now
             </motion.button>

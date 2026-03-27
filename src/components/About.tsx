@@ -30,17 +30,17 @@ export default function About() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <span className="text-xs font-semibold tracking-widest uppercase text-brand-accent mb-4 block">Our Story</span>
-          <h2 className="text-4xl md:text-5xl font-serif mb-8 leading-tight text-white">
-            Redefining Cleanliness with a <span className="italic font-light text-brand-accent">Personal Touch</span>
+          <span className="text-xs font-semibold tracking-[0.2em] uppercase text-brand-accent mb-6 block">Our Story</span>
+          <h2 className="text-5xl md:text-6xl font-serif mb-10 leading-tight text-white tracking-tight">
+            Redefining Cleanliness with a <span className="italic font-light metallic-text">Personal Touch</span>
           </h2>
-          <p className="text-lg text-brand-muted mb-6 leading-relaxed">
+          <p className="text-lg text-brand-muted mb-8 leading-relaxed font-light">
             At FEFE Clean, we believe that a clean home is a happy home. Our journey started with a simple mission: to provide premium, reliable, and meticulous cleaning services to the New South Wales community.
           </p>
-          <p className="text-lg text-brand-muted mb-8 leading-relaxed">
+          <p className="text-lg text-brand-muted mb-10 leading-relaxed font-light">
             We treat every space as if it were our own, focusing on the details that make a house feel like a home. Our team of trained professionals uses eco-friendly products and modern techniques to ensure your environment is not just clean, but healthy and revitalized.
           </p>
-          <p className="text-xl font-serif italic text-brand-accent mb-10 border-l-4 border-brand-accent/40 pl-6">
+          <p className="text-2xl font-serif italic metallic-text mb-12 border-l border-brand-accent/30 pl-8 py-2">
             "We don’t just clean — we enhance your lifestyle."
           </p>
           

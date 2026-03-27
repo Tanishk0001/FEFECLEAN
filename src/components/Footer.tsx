@@ -22,8 +22,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold mb-6 uppercase text-xs tracking-widest text-brand-accent">Quick Links</h4>
-            <ul className="space-y-4 text-sm text-brand-muted">
+            <h4 className="font-bold mb-8 uppercase text-[10px] tracking-[0.3em] text-brand-accent">Quick Links</h4>
+            <ul className="space-y-4 text-sm text-brand-muted font-light">
               <li><a href="#home" className="hover:text-brand-accent transition-colors">Home</a></li>
               <li><a href="#about" className="hover:text-brand-accent transition-colors">About Us</a></li>
               <li><a href="#services" className="hover:text-brand-accent transition-colors">Services</a></li>
@@ -33,8 +33,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold mb-6 uppercase text-xs tracking-widest text-brand-accent">Services</h4>
-            <ul className="space-y-4 text-sm text-brand-muted">
+            <h4 className="font-bold mb-8 uppercase text-[10px] tracking-[0.3em] text-brand-accent">Services</h4>
+            <ul className="space-y-4 text-sm text-brand-muted font-light">
               <li>Home Cleaning</li>
               <li>Apartment Cleaning</li>
               <li>Office Cleaning</li>
@@ -45,18 +45,18 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold mb-6 uppercase text-xs tracking-widest text-brand-accent">Contact</h4>
-            <ul className="space-y-4 text-sm text-brand-muted">
-              <li className="flex items-center gap-3">
-                <Phone size={16} className="text-brand-accent" />
+            <h4 className="font-bold mb-8 uppercase text-[10px] tracking-[0.3em] text-brand-accent">Contact</h4>
+            <ul className="space-y-4 text-sm text-brand-muted font-light">
+              <li className="flex items-center gap-4">
+                <Phone size={14} className="text-brand-accent" />
                 <span>+61 000 000 000</span>
               </li>
-              <li className="flex items-center gap-3">
-                <Mail size={16} className="text-brand-accent" />
+              <li className="flex items-center gap-4">
+                <Mail size={14} className="text-brand-accent" />
                 <span>fefe.clean.co@gmail.com</span>
               </li>
-              <li className="flex items-center gap-3">
-                <MapPin size={16} className="text-brand-accent" />
+              <li className="flex items-center gap-4">
+                <MapPin size={14} className="text-brand-accent" />
                 <span>New South Wales, Australia</span>
               </li>
             </ul>

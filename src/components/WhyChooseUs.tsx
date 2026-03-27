@@ -36,20 +36,20 @@ const reasons = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-white overflow-hidden">
+    <section className="bg-brand-dark overflow-hidden">
       <div className="section-padding">
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-24 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-xs font-semibold tracking-widest uppercase text-brand-muted mb-4 block">The FEFE Difference</span>
-            <h2 className="text-4xl md:text-5xl font-bold mb-12 leading-tight">
-              Why Discerning Clients <span className="italic font-light">Choose Us</span>
+            <span className="text-xs font-semibold tracking-[0.3em] uppercase text-brand-accent mb-6 block">The FEFE Difference</span>
+            <h2 className="text-5xl md:text-6xl font-serif mb-16 leading-tight text-white tracking-tight">
+              Why Discerning Clients <span className="italic font-light metallic-text">Choose Us</span>
             </h2>
             
-            <div className="grid sm:grid-cols-2 gap-x-8 gap-y-12">
+            <div className="grid sm:grid-cols-2 gap-x-10 gap-y-16">
               {reasons.map((reason, i) => (
                 <motion.div 
                   key={reason.title}
@@ -57,13 +57,13 @@ export default function WhyChooseUs() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
-                  className="space-y-3"
+                  className="space-y-4 group"
                 >
-                  <div className="w-10 h-10 bg-brand-soft-green rounded-full flex items-center justify-center">
+                  <div className="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center border border-white/10 group-hover:border-brand-accent transition-colors duration-500">
                     <reason.icon className="text-brand-accent" size={20} />
                   </div>
-                  <h4 className="font-bold text-lg">{reason.title}</h4>
-                  <p className="text-sm text-brand-muted leading-relaxed">{reason.description}</p>
+                  <h4 className="font-bold text-lg text-white">{reason.title}</h4>
+                  <p className="text-sm text-brand-muted leading-relaxed font-light">{reason.description}</p>
                 </motion.div>
               ))}
             </div>

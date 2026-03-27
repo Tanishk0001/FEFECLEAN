@@ -73,88 +73,85 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
               <X size={20} />
             </button>
 
-            <div className="p-8 md:p-12">
+            <div className="p-10 md:p-14">
               {!isSubmitted ? (
                 <>
-                  <h2 className="text-3xl font-serif mb-2 text-brand-accent">Get a Quote</h2>
-                  <p className="text-brand-muted mb-8">
+                  <h2 className="text-4xl font-serif mb-3 text-white tracking-tight">Get a <span className="italic font-light metallic-text">Quote</span></h2>
+                  <p className="text-brand-muted mb-10 font-light text-sm">
                     Tell us about your space and we'll get back to you shortly.
                   </p>
 
-                  <form onSubmit={handleSubmit} className="space-y-4">
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="space-y-1">
-                        <label className="text-xs font-bold uppercase tracking-widest text-brand-accent/60">Name</label>
+                  <form onSubmit={handleSubmit} className="space-y-6">
+                    <div className="grid grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-accent/80 ml-1">Name</label>
                         <input
                           required
                           type="text"
                           value={formData.name}
                           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                           placeholder="Your name"
-                          className="w-full px-4 py-3 rounded-xl border border-brand-accent/10 bg-black/40 text-white focus:border-brand-accent outline-none transition-all"
+                          className="w-full px-5 py-4 rounded-2xl border border-white/5 bg-white/5 text-white focus:border-brand-accent/50 outline-none transition-all placeholder:text-white/20 text-sm"
                         />
                       </div>
-                      <div className="space-y-1">
-                        <label className="text-xs font-bold uppercase tracking-widest text-brand-accent/60">Email</label>
+                      <div className="space-y-2">
+                        <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-accent/80 ml-1">Email</label>
                         <input
                           required
                           type="email"
                           value={formData.email}
                           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                           placeholder="Your email"
-                          className="w-full px-4 py-3 rounded-xl border border-brand-accent/10 bg-black/40 text-white focus:border-brand-accent outline-none transition-all"
+                          className="w-full px-5 py-4 rounded-2xl border border-white/5 bg-white/5 text-white focus:border-brand-accent/50 outline-none transition-all placeholder:text-white/20 text-sm"
                         />
                       </div>
                     </div>
-                    <div className="space-y-1">
-                      <label className="text-xs font-bold uppercase tracking-widest text-brand-accent/60">Service Type</label>
+                    <div className="space-y-2">
+                      <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-accent/80 ml-1">Service Type</label>
                       <select 
                         value={formData.serviceType}
                         onChange={(e) => setFormData({ ...formData, serviceType: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-brand-accent/10 bg-black/40 text-white focus:border-brand-accent outline-none transition-all"
+                        className="w-full px-5 py-4 rounded-2xl border border-white/5 bg-white/5 text-white focus:border-brand-accent/50 outline-none transition-all text-sm appearance-none"
                       >
-                        <option>Home Cleaning</option>
-                        <option>Office Cleaning</option>
-                        <option>Deep Cleaning</option>
-                        <option>Post-Construction</option>
-                        <option>Move-In / Move-Out</option>
+                        <option className="bg-brand-dark">Home Cleaning</option>
+                        <option className="bg-brand-dark">Office Cleaning</option>
+                        <option className="bg-brand-dark">Deep Cleaning</option>
+                        <option className="bg-brand-dark">Post-Construction</option>
+                        <option className="bg-brand-dark">Move-In / Move-Out</option>
                       </select>
                     </div>
-                    <div className="space-y-1">
-                      <label className="text-xs font-bold uppercase tracking-widest text-brand-accent/60">Message</label>
+                    <div className="space-y-2">
+                      <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-accent/80 ml-1">Message</label>
                       <textarea
                         rows={4}
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                         placeholder="Tell us more about your requirements..."
-                        className="w-full px-4 py-3 rounded-xl border border-brand-accent/10 bg-black/40 text-white focus:border-brand-accent outline-none transition-all resize-none"
+                        className="w-full px-5 py-4 rounded-2xl border border-white/5 bg-white/5 text-white focus:border-brand-accent/50 outline-none transition-all resize-none placeholder:text-white/20 text-sm"
                       ></textarea>
                     </div>
                     <button 
                       type="submit" 
                       disabled={isSubmitting}
-                      className="btn-primary w-full py-4 flex items-center justify-center gap-2 mt-4 disabled:opacity-50"
+                      className="btn-primary w-full py-5 flex items-center justify-center gap-3 mt-6 disabled:opacity-50"
                     >
                       {isSubmitting ? "Sending..." : (
-                        <>Send Request <Send size={18} /></>
+                        <>Send Request <Send size={14} /></>
                       )}
                     </button>
-                    <p className="text-[10px] text-center text-brand-muted mt-4">
-                      We received your request.
-                    </p>
                   </form>
                 </>
               ) : (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  className="text-center py-12"
+                  className="text-center py-16"
                 >
-                  <div className="w-20 h-20 bg-brand-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-24 h-24 bg-brand-accent/10 rounded-full flex items-center justify-center mx-auto mb-8 border border-brand-accent/20">
                     <Send className="text-brand-accent" size={32} />
                   </div>
-                  <h2 className="text-3xl font-serif mb-4 text-brand-accent">Message Sent!</h2>
-                  <p className="text-brand-muted leading-relaxed text-lg">
+                  <h2 className="text-4xl font-serif mb-4 text-white tracking-tight">Message <span className="italic font-light metallic-text">Sent!</span></h2>
+                  <p className="text-brand-muted leading-relaxed text-lg font-light">
                     Thank you, we will contact you soon.
                   </p>
                 </motion.div>

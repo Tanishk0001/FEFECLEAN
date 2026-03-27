@@ -38,18 +38,18 @@ export default function Hero() {
           >
             Premium Cleaning Experience
           </motion.span>
-          <h1 className="text-5xl md:text-7xl font-serif leading-[1.1] mb-8 text-white">
-            Elevate Your Space with <span className="italic font-light text-brand-accent">Premium</span> Cleaning
+          <h1 className="text-6xl md:text-8xl font-serif leading-[1.05] mb-8 text-white tracking-tighter">
+            Elevate Your Space with <span className="italic font-light metallic-text">Premium</span> Cleaning
           </h1>
-          <p className="text-lg md:text-xl text-brand-muted mb-10 max-w-lg leading-relaxed">
+          <p className="text-lg md:text-xl text-brand-muted mb-12 max-w-lg leading-relaxed font-light">
             Professional residential and commercial cleaning based in NSW, designed to create spotless, healthy, and stress-free environments.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-6">
             <button 
               onClick={() => setIsModalOpen(true)}
-              className="btn-primary flex items-center justify-center gap-2"
+              className="btn-primary flex items-center justify-center gap-3"
             >
-              Get a Quote <ArrowRight size={18} />
+              Get a Quote <ArrowRight size={16} />
             </button>
             <button 
               onClick={() => setIsModalOpen(true)}
