@@ -13,7 +13,7 @@ export default function About() {
           className="relative"
         >
           <img 
-            src="public/assets/Instagram highlights stories 18060561181979305 (1).jpg" 
+            src="/assets/Instagram highlights stories 18060561181979305 (1).jpg" 
             alt="FEFE Clean Team" 
             className="rounded-[40px] w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover shadow-2xl border border-brand-accent/20 grayscale-[20%] hover:grayscale-0 transition-all duration-700"
             referrerPolicy="no-referrer"
