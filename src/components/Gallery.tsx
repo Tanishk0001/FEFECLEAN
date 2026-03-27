@@ -1,24 +1,14 @@
 import { motion } from "motion/react";
-import img1 from "../public/assets/Instagram highlights stories 17972495135852311 (1).jpg";
-import img2 from "../public/assets/Instagram highlights stories 17972495135852311 (2).jpg";
-import img3 from "../public/assets/Instagram highlights stories 17972495135852311 (3).jpg";
-import img4 from "../public/assets/Instagram highlights stories 17972495135852311 (4).jpg";
-import img5 from "../public/assets/Instagram highlights stories 17972495135852311 (5).jpg";
-import img6 from "../public/assets/Instagram highlights stories 17972495135852311 (6).jpg";
-import img7 from "../public/assets/Instagram highlights stories 17972495135852311 (7).jpg";
-import img8 from "../public/assets/Instagram highlights stories 17972495135852311 (8).jpg";
-import img9 from "../public/assets/Instagram highlights stories 18060561181979305 (1).jpg";
-
 const galleryImages = [
-  { src: img1, alt: "Luxury Living Space", span: "md:col-span-2 md:row-span-2" },
-  { src: img2, alt: "Elegant Staircase", span: "md:col-span-1 md:row-span-1" },
-  { src: img3, alt: "Dining Detail", span: "md:col-span-1 md:row-span-1" },
-  { src: img4, alt: "Kitchen Perfection", span: "md:col-span-1 md:row-span-1" },
-  { src: img5, alt: "Minimalist Seating", span: "md:col-span-1 md:row-span-1" },
-  { src: img6, alt: "Arched Window View", span: "md:col-span-1 md:row-span-2" },
-  { src: img7, alt: "Modern Sink", span: "md:col-span-1 md:row-span-1" },
-  { src: img8, alt: "Vibrant Bathroom", span: "md:col-span-1 md:row-span-1" },
-  { src: img9, alt: "Artistic Interior", span: "md:col-span-2 md:row-span-1" },
+  { src: '/assets/Instagram highlights stories 17972495135852311 (1).jpg', alt: "Luxury Living Space", span: "md:col-span-2 md:row-span-2" },
+  { src: '/assets/Instagram highlights stories 17972495135852311 (2).jpg', alt: "Elegant Staircase", span: "md:col-span-1 md:row-span-1" },
+  { src: '/assets/Instagram highlights stories 17972495135852311 (3).jpg', alt: "Dining Detail", span: "md:col-span-1 md:row-span-1" },
+  { src: '/assets/Instagram highlights stories 17972495135852311 (4).jpg', alt: "Kitchen Perfection", span: "md:col-span-1 md:row-span-1" },
+  { src: '/assets/Instagram highlights stories 17972495135852311 (5).jpg', alt: "Minimalist Seating", span: "md:col-span-1 md:row-span-1" },
+  { src: '/assets/Instagram highlights stories 17972495135852311 (6).jpg', alt: "Arched Window View", span: "md:col-span-1 md:row-span-2" },
+  { src: '/assets/Instagram highlights stories 17972495135852311 (7).jpg', alt: "Modern Sink", span: "md:col-span-1 md:row-span-1" },
+  { src: '/assets/Instagram highlights stories 17972495135852311 (8).jpg', alt: "Vibrant Bathroom", span: "md:col-span-1 md:row-span-1" },
+  { src: '/assets/Instagram highlights stories 18060561181979305 (1).jpg', alt: "Artistic Interior", span: "md:col-span-2 md:row-span-1" },
 ];
 
 export default function Gallery() {
