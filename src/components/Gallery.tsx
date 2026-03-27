@@ -1,13 +1,13 @@
 import { motion } from "motion/react";
-import img1 from "/src/assets/Instagram highlights stories 17972495135852311 (1).jpg";
-import img2 from "/src/assets/Instagram highlights stories 17972495135852311 (2).jpg";
-import img3 from "/src/assets/Instagram highlights stories 17972495135852311 (3).jpg";
-import img4 from "/src/assets/Instagram highlights stories 17972495135852311 (4).jpg";
-import img5 from "/src/assets/Instagram highlights stories 17972495135852311 (5).jpg";
-import img6 from "/src/assets/Instagram highlights stories 17972495135852311 (6).jpg";
-import img7 from "/src/assets/Instagram highlights stories 17972495135852311 (7).jpg";
-import img8 from "/src/assets/Instagram highlights stories 17972495135852311 (8).jpg";
-import img9 from "/src/assets/Instagram highlights stories 18060561181979305 (1).jpg";
+import img1 from "/public/assets/Instagram highlights stories 17972495135852311 (1).jpg";
+import img2 from "/public/assets/Instagram highlights stories 17972495135852311 (2).jpg";
+import img3 from "/public/assets/Instagram highlights stories 17972495135852311 (3).jpg";
+import img4 from "/public/assets/Instagram highlights stories 17972495135852311 (4).jpg";
+import img5 from "/public/assets/Instagram highlights stories 17972495135852311 (5).jpg";
+import img6 from "/public/assets/Instagram highlights stories 17972495135852311 (6).jpg";
+import img7 from "/public/assets/Instagram highlights stories 17972495135852311 (7).jpg";
+import img8 from "/public/assets/Instagram highlights stories 17972495135852311 (8).jpg";
+import img9 from "/public/assets/Instagram highlights stories 18060561181979305 (1).jpg";
 
 const galleryImages = [
   { src: img1, alt: "Luxury Living Space", span: "md:col-span-2 md:row-span-2" },
