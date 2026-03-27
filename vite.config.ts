@@ -11,7 +11,6 @@ export default defineConfig(({mode}) => {
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
     },
-@@ -16,9 +17,8 @@
       },
     },
     server: {
